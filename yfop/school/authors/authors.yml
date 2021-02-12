@@ -1,0 +1,5 @@
+- name: Chris Samiullah
+  bio: Chris has taught over 14k students how to make computers less annoying.
+  subtitle: Human
+  author_image: "./assets/chris_samiullah.jpg"
+  display: true
