@@ -5,13 +5,8 @@ import Layout from '@coursemaker/gatsby-theme-coursemaker/src/components/layout'
 
 const Privacy = ({ pageContext }) => {
     const { school } = pageContext;
-    const privacyDefault = `
-Custom Text (todo)
-`
+    const privacyDefault = `Custom Text (todo)`
     let privacyPolicy = privacyDefault;
-    if(school?.privacy_policy !== null && school?.privacy_policy !== ''){
-        privacyPolicy = school?.privacy_policy;
-    }
     let schoolThemeStyle = pageContext.school?.schoolThemeStyle;
     if (!schoolThemeStyle) {
         schoolThemeStyle = {
