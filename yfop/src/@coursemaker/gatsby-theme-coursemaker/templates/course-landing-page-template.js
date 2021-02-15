@@ -4,7 +4,7 @@ import { jsx } from 'theme-ui';
 import Layout from '@coursemaker/gatsby-theme-coursemaker/src/components/layout';
 import Section from '@coursemaker/gatsby-theme-coursemaker/src/components/section';
 import Author from '@coursemaker/gatsby-theme-coursemaker/src/components/author';
-import LandingVideo from '@coursemaker/gatsby-theme-coursemaker/src/components/landing_page/landing-video';
+import LandingVideo from '../components/landing_page/landing-video';
 import LandingImage from '@coursemaker/gatsby-theme-coursemaker/src/components/image_landing';
 import OverviewSection from '@coursemaker/gatsby-theme-coursemaker/src/components/landing_page/overview-section';
 import TestimonialsSection from '@coursemaker/gatsby-theme-coursemaker/src/components/landing_page/testimonials-section';
