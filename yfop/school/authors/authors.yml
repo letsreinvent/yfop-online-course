@@ -1,5 +1,50 @@
+- name: Claudie
+  bio: Bio coming soon
+  subtitle: coming soon
+  author_image: "./assets/claudie.png"
+  display: true
+- name: Aden
+  bio: Bio coming soon
+  subtitle: coming soon
+  author_image: "./assets/aden.png"
+  display: true
+- name: Bien King
+  bio: Bio coming soon
+  subtitle: coming soon
+  author_image: "./assets/bien.png"
+  display: true
+- name: Laura
+  bio: Bio coming soon
+  subtitle: coming soon
+  author_image: "./assets/laura.png"
+  display: true
+- name: Arthur
+  bio: Bio coming soon
+  subtitle: coming soon
+  author_image: "./assets/arthur.png"
+  display: true
 - name: Chris Samiullah
-  bio: Chris has taught over 14k students how to make computers less annoying.
-  subtitle: Human
-  author_image: "./assets/chris_samiullah.jpg"
+  bio: Chris has taught over 15k students about Machine Learning Engineering.
+  subtitle: Tech Lead
+  author_image: "./assets/chris.png"
+  display: true
+- name: Maisie
+  bio: Bio coming soon
+  subtitle: coming soon
+  author_image: "./assets/maisie.png"
+  display: true
+- name: Wadia
+  bio: Bio coming soon
+  subtitle: coming soon
+  author_image: "./assets/wadia.png"
+  display: true
+- name: Eleni
+  bio: Bio coming soon
+  subtitle: coming soon
+  author_image: "./assets/eleni.png"
+  display: true
+- name: Jessa
+  bio: Bio coming soon
+  subtitle: coming soon
+  author_image: "./assets/jessa.png"
   display: true
