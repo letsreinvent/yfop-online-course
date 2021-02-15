@@ -11,4 +11,4 @@ ID = "CourseMaker Academy"
 [context.deploy-preview.environment]
   GATSBY_USE_STRAPI="false"
   NODE_VERSION="14.15.0"
-  GATSBY_ENABLE_AUTH=false
+  GATSBY_ENABLE_AUTH="false"
