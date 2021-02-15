@@ -1,9 +1,5 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import Icon
-    from "../../../../../../../gatsby-theme-coursemaker/@coursemaker/gatsby-theme-coursemaker/src/components/icon";
-import svg
-    from "../../../../../../../gatsby-theme-coursemaker/@coursemaker/gatsby-theme-coursemaker/src/images/icons/icon-welcome.svg";
 
 /* ...props */
 const LandingVideo = ({ videoID }) => {
