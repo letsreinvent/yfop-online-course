@@ -108,3 +108,5 @@ dist
 
 # Gatsby builds
 public
+
+.DS_Store

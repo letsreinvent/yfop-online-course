@@ -4,7 +4,7 @@ module.exports = {
     landing_page: {
       title: 'WWF Youth Leadership Online Academy',
       subtitle: 'Build your online course with open source',
-      videoID: 'ts8c0FjkHDk',
+      videoID: 'jvgEOFKppAM',
     },
   },
   plugins: [
