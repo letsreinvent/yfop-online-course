@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "WWF Youth Leadership Online Academy",
+    title: "Youth For Our Planet",
     landing_page: {
-      title: 'WWF Youth Leadership Online Academy',
+      title: 'Youth For Our Planet',
       subtitle: 'Build your online course with open source',
       videoID: 'jvgEOFKppAM',
     },
