@@ -4,7 +4,7 @@ import { jsx } from 'theme-ui';
 import Layout from '@coursemaker/gatsby-theme-coursemaker/src/components/layout';
 import Section from '@coursemaker/gatsby-theme-coursemaker/src/components/section';
 import Author from '@coursemaker/gatsby-theme-coursemaker/src/components/author';
-import LandingVideo from '../components/landing_page/landing-video';
+import LandingVideo from './src/@coursemaker/gatsby-theme-coursemaker/components/landing_page/landing-video';
 import LandingImage from '@coursemaker/gatsby-theme-coursemaker/src/components/image_landing';
 import OverviewSection from '@coursemaker/gatsby-theme-coursemaker/src/components/landing_page/overview-section';
 import TestimonialsSection from '@coursemaker/gatsby-theme-coursemaker/src/components/landing_page/testimonials-section';
@@ -14,8 +14,11 @@ import Icon from '@coursemaker/gatsby-theme-coursemaker/src/components/icon';
 import svg from '@coursemaker/gatsby-theme-coursemaker/src/images/icons/icon-courses.svg';
 import CTA from '@coursemaker/gatsby-theme-coursemaker/src/components/cta';
 import Button from "@coursemaker/gatsby-theme-coursemaker/src/components/button";
+import { getProfile, login } from '@coursemaker/gatsby-theme-coursemaker/src/auth/auth';
 
 const CourseLandingPage = ({ pageContext = {} }) => {
+    const user = getProfile()
+    console.log(user)
     const { school } = pageContext;
     const { course } = pageContext;
     const allCourseLectures = pageContext?.allCourseLectures;

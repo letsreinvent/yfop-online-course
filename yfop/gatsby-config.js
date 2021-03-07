@@ -1,3 +1,7 @@
+require('dotenv').config();
+
+console.log(process.env.GATSBY_ENABLE_AUTH)
+
 module.exports = {
   siteMetadata: {
     title: "Youth For Our Planet",
