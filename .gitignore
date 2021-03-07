@@ -110,3 +110,6 @@ dist
 public
 
 .DS_Store
+
+# Local Netlify folder
+.netlify
