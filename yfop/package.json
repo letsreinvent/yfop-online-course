@@ -9,11 +9,13 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "clean_develop": "gatsby clean && gatsby develop"
   },
   "dependencies": {
+    "@coursemaker/gatsby-theme-coursemaker": "^0.3.2",
+    "dotenv": "^8.2.0",
     "gatsby": "^2.32.3",
-    "@coursemaker/gatsby-theme-coursemaker": "^0.2.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "tailwindcss": "^1.8.10"

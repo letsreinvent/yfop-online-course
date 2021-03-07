@@ -14,8 +14,11 @@ import Icon from '@coursemaker/gatsby-theme-coursemaker/src/components/icon';
 import svg from '@coursemaker/gatsby-theme-coursemaker/src/images/icons/icon-courses.svg';
 import CTA from '@coursemaker/gatsby-theme-coursemaker/src/components/cta';
 import Button from "@coursemaker/gatsby-theme-coursemaker/src/components/button";
+import { getProfile, login } from '@coursemaker/gatsby-theme-coursemaker/src/auth/auth';
 
 const CourseLandingPage = ({ pageContext = {} }) => {
+    const user = getProfile()
+    console.log(user)
     const { school } = pageContext;
     const { course } = pageContext;
     const allCourseLectures = pageContext?.allCourseLectures;
