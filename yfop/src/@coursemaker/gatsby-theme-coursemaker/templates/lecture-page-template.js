@@ -14,8 +14,13 @@ import Button from "@coursemaker/gatsby-theme-coursemaker/src/components/button"
 const LectureTemplate = ({ pageContext = {} }) => {
     const [certificateUrl, setCertificateUrl] = useState(null)
     let profile = getProfile()
-    console.log(profile)
-    console.log(profile.user_metadata)
+    let fullName = profile?.name;
+    try {
+        fullName = profile['https://youthforourplanet.letsreinvent.org/user_metadata']['full_name']
+    }
+    catch(err) {
+        console.error(err)
+    }
     useEffect(() => {
         if (!isAuthenticated()) {
             login();
@@ -94,20 +99,16 @@ const LectureTemplate = ({ pageContext = {} }) => {
                 }
             })
         }
-        console.log(sectionName)
         return sectionName;
     }
 
     // TODO: check if last lecture in section
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(profile)
-        console.log(profile.user_metadata)
         let sectionName = getSectionTitleFromLecture();
         let baseUrl = 'https://api.coursemaker.org/api/v1'
-        let fullUrl = `${baseUrl}/completion-certificates/certificate/?student_name=${profile?.name}&section_name=${sectionName}`
+        let fullUrl = `${baseUrl}/completion-certificates/certificate/?student_name=${fullName}&section_name=${sectionName}`
         setCertificateUrl(fullUrl)
-        console.log(fullUrl)
     }
 
     return (
