@@ -13,18 +13,27 @@ import Button from "@coursemaker/gatsby-theme-coursemaker/src/components/button"
 
 const LectureTemplate = ({ pageContext = {} }) => {
     const [certificateUrl, setCertificateUrl] = useState(null)
+
     let profile = getProfile()
-    let fullName = profile?.name;
-    try {
-        fullName = profile['https://youthforourplanet.letsreinvent.org/user_metadata']['full_name']
-    }
-    catch(err) {
-        console.error(err)
-    }
+    let fullName;
+
     useEffect(() => {
         if (!isAuthenticated()) {
             login();
             return <p>Redirecting to login...</p>;
+        } else {
+            try {
+                if ('https://youthforourplanet.letsreinvent.org/user_metadata' in profile){
+                    // user just logged in
+                    fullName = profile['https://youthforourplanet.letsreinvent.org/user_metadata']['full_name']
+                    localStorage.setItem('fullName', fullName);
+                } else {
+                    // user previously logged in or not authenticated
+                    fullName = localStorage.getItem("fullName");
+                }
+            } catch(err) {
+                console.error(err)
+            }
         }
     });
 
