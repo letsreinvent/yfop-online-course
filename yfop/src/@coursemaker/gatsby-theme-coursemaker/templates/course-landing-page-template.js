@@ -55,7 +55,14 @@ const CourseLandingPage = ({ pageContext = {} }) => {
     // Section 5 - Testimonials
 
     // Section 6 - Author(s)
-    const { author_display } = course;
+    let { author_display } = course;
+    if (author_display){
+        // TODO: harmonize strapi so that it returns a list of authors also
+        if (!author_display.length){
+            author_display = [author_display]
+        }
+    }
+    console.log(pageContext)
 
     // Section 6 - FAQ
 
@@ -142,9 +149,13 @@ const CourseLandingPage = ({ pageContext = {} }) => {
 
             {<TestimonialsSection schoolThemeStyle={schoolThemeStyle} landingPage={landingPage} />}
 
-            {<FAQSection schoolThemeStyle={schoolThemeStyle} landingPage={landingPage} />}
+            {author_display && author_display.length > 0 && (
+                author_display.map((author, index) => (
+                    <Author schoolThemeStyle={schoolThemeStyle} author_display={author} />
+                ))
+            )}
 
-            {<Author schoolThemeStyle={schoolThemeStyle} author_display={author_display} />}
+            {<FAQSection schoolThemeStyle={schoolThemeStyle} landingPage={landingPage} />}
 
             {closingCTA && (
                 <section id="cta" className="py-8 text-center text-white bg-gray-900 lg:py-24">
