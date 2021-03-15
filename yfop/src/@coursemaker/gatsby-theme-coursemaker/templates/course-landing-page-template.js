@@ -149,13 +149,15 @@ const CourseLandingPage = ({ pageContext = {} }) => {
 
             {<TestimonialsSection schoolThemeStyle={schoolThemeStyle} landingPage={landingPage} />}
 
+            {<FAQSection schoolThemeStyle={schoolThemeStyle} landingPage={landingPage} />}
+
+            <h3 className="text-center">In Collaboration With</h3>
+
             {author_display && author_display.length > 0 && (
                 author_display.map((author, index) => (
                     <Author schoolThemeStyle={schoolThemeStyle} author_display={author} />
                 ))
             )}
-
-            {<FAQSection schoolThemeStyle={schoolThemeStyle} landingPage={landingPage} />}
 
             {closingCTA && (
                 <section id="cta" className="py-8 text-center text-white bg-gray-900 lg:py-24">
