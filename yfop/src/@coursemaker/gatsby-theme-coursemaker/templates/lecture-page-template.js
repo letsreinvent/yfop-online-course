@@ -106,7 +106,7 @@ const LectureTemplate = ({ pageContext = {} }) => {
     const handleSubmit = (event) => {
         event.preventDefault();
         let sectionName = getSectionTitleFromLecture();
-        let baseUrl = 'https://api.coursemaker.org/api/v1'
+        let baseUrl = 'https://api.coursemaker.io/api/v1'
         let fullUrl = `${baseUrl}/completion-certificates/certificate/?student_name=${fullName}&section_name=${sectionName}`
         setCertificateUrl(fullUrl)
     }
