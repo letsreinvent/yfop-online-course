@@ -13,7 +13,7 @@
     "clean_develop": "gatsby clean && gatsby develop"
   },
   "dependencies": {
-    "@coursemaker/gatsby-theme-coursemaker": "^0.3.2",
+    "@coursemaker/gatsby-theme-coursemaker": "0.3.6",
     "dotenv": "^8.2.0",
     "gatsby": "^2.32.3",
     "react": "^16.8.6",

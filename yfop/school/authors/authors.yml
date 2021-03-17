@@ -1,50 +1,20 @@
-- name: Claudie
-  bio: Bio coming soon
-  subtitle: coming soon
-  author_image: "./assets/claudie.png"
+- name: WWF
+  bio: WWF is the world’s leading independent conservation organisation. Our mission is to create a world where people and wildlife can thrive together.
+  subtitle: http://www.wwf.org.uk
+  author_image: "./assets/wwf_uk.png"
   display: true
-- name: Aden
-  bio: Bio coming soon
-  subtitle: coming soon
-  author_image: "./assets/aden.png"
+- name: CoalitionWILD
+  bio: CoalitionWILD is creating lasting youth leadership through equipping and connecting young people globally to tackle our planet’s greatest challenges.
+  subtitle: http://coalitionwild.org
+  author_image: "./assets/coalition_wild.png"
   display: true
-- name: Bien King
-  bio: Bio coming soon
-  subtitle: coming soon
-  author_image: "./assets/bien.png"
+- name: Let's Reinvent
+  bio: Let's Reinvent is on a mission to positively change the world through digital community, arts, sustainability and inclusivity.
+  subtitle: https://letsreinvent.org
+  author_image: "./assets/lets_reinvent.png"
   display: true
-- name: Laura
-  bio: Bio coming soon
-  subtitle: coming soon
-  author_image: "./assets/laura.png"
-  display: true
-- name: Arthur
-  bio: Bio coming soon
-  subtitle: coming soon
-  author_image: "./assets/arthur.png"
-  display: true
-- name: Chris Samiullah
-  bio: Chris has taught over 15k students about Machine Learning Engineering.
-  subtitle: Tech Lead
-  author_image: "./assets/chris.png"
-  display: true
-- name: Maisie
-  bio: Bio coming soon
-  subtitle: coming soon
-  author_image: "./assets/maisie.png"
-  display: true
-- name: Wadia
-  bio: Bio coming soon
-  subtitle: coming soon
-  author_image: "./assets/wadia.png"
-  display: true
-- name: Eleni
-  bio: Bio coming soon
-  subtitle: coming soon
-  author_image: "./assets/eleni.png"
-  display: true
-- name: Jessa
-  bio: Bio coming soon
-  subtitle: coming soon
-  author_image: "./assets/jessa.png"
+- name: Low Carbon City
+  bio: Low Carbon City promotes a global mobilization for the collective construction of low carbon and resilient cities.
+  subtitle: http://lowcarbon.city
+  author_image: "./assets/low_carbon_city.png"
   display: true
