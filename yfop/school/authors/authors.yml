@@ -1,8 +1,3 @@
-- name: Youth for Our Planet
-  bio: Youth for Our Planet is the global youth movement calling for world leaders to take ambitious and urgent action on the oceans, biodiversity, the climate and sustainable development.
-  subtitle: www.youthforourplanet.com
-  author_image: "./assets/yfop.png"
-  display: true
 - name: WWF
   bio: WWF is the world’s leading independent conservation organisation. Our mission is to create a world where people and wildlife can thrive together.
   subtitle: www.wwf.org.uk
