@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
-import Layout from '../components/layout';
+import Layout from '@coursemaker/gatsby-theme-coursemaker/src/components/layout';
 
 const Terms = ({ pageContext }) => {
     const { school } = pageContext;
