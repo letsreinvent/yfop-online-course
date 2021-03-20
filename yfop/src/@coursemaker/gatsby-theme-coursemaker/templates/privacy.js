@@ -5,8 +5,9 @@ import Layout from '@coursemaker/gatsby-theme-coursemaker/src/components/layout'
 
 const Privacy = ({ pageContext }) => {
     const { school } = pageContext;
-    const privacyDefault = ```
-    At Let's Reinvent, accessible from www.letsreinvent.org, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Let's Reinvent and how we use it.
+    const privacyDefault = `
+    
+At Let's Reinvent, accessible from www.letsreinvent.org, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Let's Reinvent and how we use it.
 
 If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.
 
@@ -112,7 +113,7 @@ Another part of our priority is adding protection for children while using the i
 
 Let's Reinvent does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.
 
-    ```
+    `
     let privacyPolicy = privacyDefault;
     let schoolThemeStyle = pageContext.school?.schoolThemeStyle;
     if (!schoolThemeStyle) {

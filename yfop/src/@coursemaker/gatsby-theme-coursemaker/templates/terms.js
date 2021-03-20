@@ -5,12 +5,8 @@ import Layout from '@coursemaker/gatsby-theme-coursemaker/src/components/layout'
 
 const Terms = ({ pageContext }) => {
     const { school } = pageContext;
-    const termsText = ```
-    ​Last updated: February 22, 2021
 
-Please read these terms and conditions carefully before using Our Service.
-
-​
+    let termsText = `Please read these terms and conditions carefully before using Our Service. \n
 
 ### Interpretation and Definitions
 ​
@@ -137,8 +133,9 @@ By continuing to access or use Our Service after those revisions become effectiv
 
 ### Contact Us
 If you have any questions about these Terms and Conditions, You can contact us by email: hello@letsreinvent.org
-    ```
-    let terms_and_conditions = termsText;
+`
+
+    let schoolThemeStyle = pageContext.school?.schoolThemeStyle;
     if (!schoolThemeStyle) {
         schoolThemeStyle = {
             primaryColor: 'purple',
@@ -159,7 +156,7 @@ If you have any questions about these Terms and Conditions, You can contact us b
             <section className="py-12 md:py-16">
                 <div className="container mx-auto lg:w-7/12">
                     <article className="leading-relaxed space-y-5">
-                        <ReactMarkdown source={terms_and_conditions} />
+                        <ReactMarkdown source={termsText} />
                     </article>
                 </div>
             </section>
