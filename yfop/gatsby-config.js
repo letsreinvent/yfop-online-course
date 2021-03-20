@@ -2,9 +2,11 @@ require('dotenv').config();
 
 console.log(process.env.GATSBY_ENABLE_AUTH)
 
+
 module.exports = {
   siteMetadata: {
     title: "Youth For Our Planet",
+    terms_and_conditions: 'hello',
     landing_page: {
       title: 'Youth For Our Planet',
       subtitle: 'Build your online course with open source',
