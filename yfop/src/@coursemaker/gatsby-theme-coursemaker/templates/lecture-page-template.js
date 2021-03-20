@@ -103,6 +103,7 @@ const LectureTemplate = ({ pageContext = {} }) => {
                     sectionLectures.map(aLecture => {
                         if (aLecture.id === lecture.id){
                             sectionName = aSection?.title;
+                            sectionName = sectionName.split(':')[1]
                         }
                     })
                 }
