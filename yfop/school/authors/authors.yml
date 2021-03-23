@@ -1,20 +1,20 @@
 - name: WWF
   bio: WWF is the world’s leading independent conservation organisation. Our mission is to create a world where people and wildlife can thrive together.
-  subtitle: <a href="http://www.wwf.org.uk" target="_blank">www.wwf.org.uk</a>
+  subtitle: www.wwf.org.uk
   author_image: "./assets/wwf_uk.png"
   display: true
 - name: CoalitionWILD
   bio: CoalitionWILD is creating lasting youth leadership through equipping and connecting young people globally to tackle our planet’s greatest challenges.
-  subtitle: <a href="http://www.coalitionwild.org" target="_blank">www.coalitionwild.org<a>
+  subtitle: www.coalitionwild.org
   author_image: "./assets/coalition_wild.png"
   display: true
 - name: Let's Reinvent
   bio: Let's Reinvent is on a mission to positively change the world through digital community, arts, sustainability and inclusivity.
-  subtitle: <a href="http://www.letsreinvent.org" target="_blank">www.letsreinvent.org</a>
+  subtitle: www.letsreinvent.org
   author_image: "./assets/lets_reinvent.png"
   display: true
 - name: Low Carbon City
   bio: Low Carbon City promotes a global mobilization for the collective construction of low carbon and resilient cities.
-  subtitle: <a href="http://www.lowcarbon.city" target="_blank">www.lowcarbon.city</a>
+  subtitle: www.lowcarbon.city
   author_image: "./assets/low_carbon_city.png"
   display: true
